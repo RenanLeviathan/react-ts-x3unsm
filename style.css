@@ -1,0 +1,105 @@
+* {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  margin: 0;
+}
+
+h1,
+p {
+  font-family: Lato;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3px;
+  flex: 1 1 0;
+}
+
+nav {
+  background-color: turquoise;
+  width: 100%;
+  height: 3em;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+}
+
+nav label {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  transition: all 0.4s;
+  padding: 10px 5px;
+}
+
+nav label:hover {
+  background-color: aquamarine;
+  transition: 0.4s;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+input[type='radio'] {
+  display: none;
+}
+
+#rd_africa:checked ~ .sections {
+  margin-top: -100vh;
+}
+
+#rd_americas:checked ~ .sections {
+  margin-top: -200vh;
+}
+
+#rd_asia:checked ~ .sections {
+  margin-top: -300vh;
+}
+
+#rd_europe:checked ~ .sections {
+  margin-top: -400vh;
+}
+
+#rd_oceania:checked ~ .sections {
+  margin-top: -500vh;
+}
+
+.sections {
+  transition: all 0.5s ease-in-out;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 5px;
+  display: flex;
+}
+
+header h1,
+header h4 {
+  position: relative;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: coral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
