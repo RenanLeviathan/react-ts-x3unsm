@@ -1,10 +1,21 @@
 .Card {
-  max-width: 200px;
-  max-height: 300px;
+  min-width: 100px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: all 0.4s ease-in-out;
   align-items: center;
+}
+
+.Card a {
+  text-decoration: none;
+  color: #100639;
+}
+
+.Card:hover {
+  transition: all 0.4s ease-in-out;
+  background-color: #8d6aa6;
 }
 
 .Card img {
